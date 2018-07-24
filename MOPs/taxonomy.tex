@@ -1,7 +1,8 @@
-\documentclass[twocolumn,autodetect-engine,dvipdfmx-if-dvi,ja=standard,a4paper,12pt]{bxjsarticle}
+\documentclass[autodetect-engine,dvipdfmx-if-dvi,ja=standard,a4paper,12pt]{bxjsarticle}
     \usepackage{fancyhdr}
     \usepackage{titlesec}
     \usepackage{graphicx}
+    \usepackage{multicol}
     
     \setlength{\textheight}{\paperheight}
     \setlength{\topmargin}{-10truemm}
@@ -23,29 +24,31 @@
     \renewcommand{\headrulewidth}{0pt}
     
     \begin{document}
-    \twocolumn[
-      \center
+      \begin{center}
       \large{パレートフロントを視覚化する手法の分類} \\
       A Taxonomy of Methods for Visualizing Pareto Front Approximations\\
       \normalsize Bogdan Filipic, Tea Tusar\\
       \vspace*{10pt}
-
-      \section*{概要}
+      \begin{abstract}
       多目的最適化では，従来の汎用的なデータの可視化手法から，多目的最適化の特殊性(専門性?)に合わせたアプローチに至るまで，
       多くの技術を利用して結果の可視化が行われている．また近年，専門的なアプローチの数が急速に増加している．\\
       そこで，我々はこの分野のユーザと開発者の両方を支援するために，パレートフロント近似を可視化するための手法の分類法を提案する．\\
       これは視覚的表現が使用されたものより，視覚化されたデータの性質と視覚化手法の特性に基づいており，一度の実行により得られた個体の視覚化および複数回の試行による複数の近似セットをカバーする．視覚化手法の例を用いて提案する分類カテゴリを特徴づけ，図示する．\\
       本提案により，多目的最適化のコミュニティの本質を突き，コミュニケーションを容易にし，視覚化手法のさらなる開発のために役立つことが期待される．
       
+      \vspace*{-10pt}
       \section*{キーワード}
+      \vspace{-10pt}
       多目的最適化， 視覚化手法， 分類体系
-    ]
+      \end{abstract}
+      \end{center}
 
-    \begin{flushleft}
+    \begin{multicols}{2}
+%    \begin{flushleft}
       \section{はじめに}
 
-aaa
       
-    
-    \end{flushleft}
+ 
+    \end{multicols}   
+%    \end{flushleft}
     \end{document}
